@@ -1,30 +1,15 @@
-# appinventor-extensions
+# App Inventor Extensions
 
 Extensions for [MIT App Inventor](https://appinventor.mit.edu).
 
-## Repository layout
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Android-brightgreen.svg)](#)
 
-Each extension lives in its own directory with its sources, build tooling and
-documentation. Built `.aix` files are attached to
-[releases](../../releases) rather than committed.
+## Installation
 
-## Building
+Download the `.aix` from [Releases](../../releases), then in App Inventor:
+**Palette → Extension → Import extension**.
 
-App Inventor extensions are not standalone projects — they compile inside an App
-Inventor source tree, against its annotation processor:
+---
 
-```bash
-git clone https://github.com/mit-cml/appinventor-sources
-cd appinventor-sources/appinventor
-export JAVA_HOME=/path/to/jdk-17
-ant extensions
-```
-
-Java 17 specifically. On newer JDKs the annotation processors are skipped and the
-build fails later with a missing `simple_components.json`.
-
-Built extensions land in `components/build/extensions/`.
-
-## Licence
-
-[MIT](LICENSE)
+<p align="center">Made with ❤️ by Preet Vadaliya</p>
