@@ -1,9 +1,11 @@
-# App Inventor Extensions
+<h1 align="center">App Inventor Extensions</h1>
 
-Extensions for [MIT App Inventor](https://appinventor.mit.edu).
+<p align="center">Extensions for <a href="https://appinventor.mit.edu">MIT App Inventor</a>.</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Android-brightgreen.svg)](#)
+<p align="center">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+  <a href="#"><img alt="Platform: Android" src="https://img.shields.io/badge/platform-Android-brightgreen.svg"></a>
+</p>
 
 ---
 
