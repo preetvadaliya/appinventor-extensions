@@ -1,23 +1,11 @@
 ---
-description: Full-screen ads at natural breaks in your app.
-icon: rectangle-ad
+description: Every block of the AdMob Interstitial extension.
+icon: book
 ---
 
-# AdMob Interstitial
+# AdMob Interstitial documentation
 
-| Extension | Version | Requires | Built on |
-|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/docs/images/admob.png" alt="" data-size="line"> AdMobInterstitial | 1.1 | Android 6.0 (API 23) | Google Mobile Ads SDK 25.3.0 |
-
-<a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-interstitial/de.preet.admob.interstitial.aix" class="button primary" data-icon="download">Download .aix</a> <a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-interstitial/AdMobInterstitialDemo.aia" class="button secondary" data-icon="box-open">Sample project (.aia)</a>
-
-## Overview
-
-Shows a full-screen AdMob interstitial ad. Call LoadAd, wait for AdLoaded, then call ShowAd at a natural break in your app. The defaults are Google's test IDs. Ads only work in a built app, never in the Companion.
-
-Load early and show the ad only at a natural break, such as between levels. Each loaded ad shows once, so call `LoadAd` again in `AdDismissed`.
-
-App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
+Every event, method, property and dropdown of **AdMobInterstitial**, in alphabetical order.
 
 **Permissions**
 
@@ -153,36 +141,4 @@ A list of test device IDs. These devices get test ads even with real IDs. Logcat
 | `MediationShowError` | `Mediation Show Error` | A mediation partner failed to show its ad. |
 | `Unknown` | `Unknown` | Anything else. The message explains it. |
 
-## Example
-
-[AdMobInterstitialDemo.aia](https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-interstitial/AdMobInterstitialDemo.aia) is ready to build. Screen1
-has a status label, a **Load ad** and a **Show ad** button, and **AdMobInterstitial1**
-with the default test IDs.
-
-**Load an ad as soon as the app starts,** so one is ready when you need it.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="302"><figcaption></figcaption></figure></div>
-
-**Show whether it loaded.** `AdLoaded` says the ad is ready, `AdFailedToLoad` shows why
-it isn't.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-admobinterstitial1-adloaded.png" alt="AdLoaded" width="483"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-admobinterstitial1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
-
-**Load ad** requests one by hand.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-loadbutton-click.png" alt="LoadButton.Click" width="302"><figcaption></figcaption></figure></div>
-
-**Show ad** checks `IsLoaded` first, so tapping it too early just shows a message.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-showbutton-click.png" alt="ShowButton.Click" width="488"><figcaption></figcaption></figure></div>
-
-**While the ad is up and after it closes.** `AdShowed` is where a game would pause.
-`AdDismissed` loads the next ad right away, because each loaded ad shows only once.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-admobinterstitial1-adshowed.png" alt="AdShowed" width="400"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-admobinterstitial1-addismissed.png" alt="AdDismissed" width="485"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-interstitial/images/sample-admobinterstitial1-adfailedtoshow.png" alt="AdFailedToShow" width="424"><figcaption></figcaption></figure></div>
+To see these blocks working together, follow the [tutorial](tutorial.md).

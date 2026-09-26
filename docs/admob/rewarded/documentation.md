@@ -1,23 +1,11 @@
 ---
-description: Full-screen ads the user chooses to watch for a reward.
-icon: rectangle-ad
+description: Every block of the AdMob Rewarded extension.
+icon: book
 ---
 
-# AdMob Rewarded
+# AdMob Rewarded documentation
 
-| Extension | Version | Requires | Built on |
-|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/docs/images/admob.png" alt="" data-size="line"> AdMobRewarded | 1.0 | Android 6.0 (API 23) | Google Mobile Ads SDK 25.3.0 |
-
-<a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded/de.preet.admob.rewarded.aix" class="button primary" data-icon="download">Download .aix</a> <a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded/AdMobRewardedDemo.aia" class="button secondary" data-icon="box-open">Sample project (.aia)</a>
-
-## Overview
-
-Shows a full-screen AdMob rewarded ad that the user chooses to watch for a reward. Call LoadAd, wait for AdLoaded, then call ShowAd when the user asks for the reward, and give it in UserEarnedReward. The defaults are Google's test IDs. Ads only work in a built app, never in the Companion.
-
-Show it only when the user asks for it, and give the reward in `UserEarnedReward` only: someone who closes the ad early still gets `AdDismissed`, but not the reward.
-
-App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
+Every event, method, property and dropdown of **AdMobRewarded**, in alphabetical order.
 
 **Permissions**
 
@@ -164,36 +152,4 @@ A list of test device IDs. These devices get test ads even with real IDs. Logcat
 | `MediationShowError` | `Mediation Show Error` | A mediation partner failed to show its ad. |
 | `Unknown` | `Unknown` | Anything else. The message explains it. |
 
-## Example
-
-[AdMobRewardedDemo.aia](https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded/AdMobRewardedDemo.aia) is ready to build. Screen1 has a
-status label, a coin counter, a **Watch ad for coins** button, and **AdMobRewarded1** with
-the default test IDs.
-
-**Load an ad as soon as the app starts,** so one is ready when the user asks for it.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="306"><figcaption></figcaption></figure></div>
-
-**Show whether it loaded.** `AdLoaded` says the ad is ready, `AdFailedToLoad` shows why
-it isn't.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adloaded.png" alt="AdLoaded" width="546"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
-
-**Watch ad for coins** checks `IsLoaded` first, so tapping it too early just shows a
-message.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-watchbutton-click.png" alt="WatchButton.Click" width="488"><figcaption></figcaption></figure></div>
-
-**Give the reward.** `UserEarnedReward` adds `rewardAmount` to the coin counter. It fires
-only when the user has watched enough of the ad.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-userearnedreward.png" alt="UserEarnedReward" width="712"><figcaption></figcaption></figure></div>
-
-**After the ad closes,** `AdDismissed` loads the next one right away, because each loaded
-ad shows only once. `AdFailedToShow` shows what went wrong.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-addismissed.png" alt="AdDismissed" width="485"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoshow.png" alt="AdFailedToShow" width="424"><figcaption></figcaption></figure></div>
+To see these blocks working together, follow the [tutorial](tutorial.md).

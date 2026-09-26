@@ -10,11 +10,11 @@ five can be used in the same app: they share one copy of Google's ads SDK.
 
 | Extension | Shows | Version |
 |---|---|---|
-| [AdMob Banner](banner.md) | A banner inside an arrangement, or floating at the top or bottom | 1.1 |
-| [AdMob Interstitial](interstitial.md) | A full-screen ad at a natural break | 1.1 |
-| [AdMob Rewarded](rewarded.md) | A full-screen ad the user chooses to watch for a reward | 1.0 |
-| [AdMob App Open](app-open.md) | A full-screen ad when the user comes back to the app | 1.0 |
-| [AdMob Rewarded Interstitial](rewarded-interstitial.md) | A rewarded ad at a natural break, after an intro screen | 1.0 |
+| [AdMob Banner](banner/README.md) | A banner inside an arrangement, or floating at the top or bottom | 1.1 |
+| [AdMob Interstitial](interstitial/README.md) | A full-screen ad at a natural break | 1.1 |
+| [AdMob Rewarded](rewarded/README.md) | A full-screen ad the user chooses to watch for a reward | 1.0 |
+| [AdMob App Open](app-open/README.md) | A full-screen ad when the user comes back to the app | 1.0 |
+| [AdMob Rewarded Interstitial](rewarded-interstitial/README.md) | A rewarded ad at a natural break, after an intro screen | 1.0 |
 
 All five are built on Google Mobile Ads SDK 25.3.0, which Google supports until June 30,
 2028, and need Android 6.0 or newer.

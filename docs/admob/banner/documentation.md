@@ -1,23 +1,11 @@
 ---
-description: Banner ads inside an arrangement or floating at the top or bottom.
-icon: rectangle-ad
+description: Every block of the AdMob Banner extension.
+icon: book
 ---
 
-# AdMob Banner
+# AdMob Banner documentation
 
-| Extension | Version | Requires | Built on |
-|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/docs/images/admob.png" alt="" data-size="line"> AdMobBanner | 1.1 | Android 6.0 (API 23) | Google Mobile Ads SDK 25.3.0 |
-
-<a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-banner/de.preet.admob.banner.aix" class="button primary" data-icon="download">Download .aix</a> <a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-banner/AdMobBannerDemo.aia" class="button secondary" data-icon="box-open">Sample project (.aia)</a>
-
-## Overview
-
-Shows an AdMob banner ad. Set AppId and AdUnitId, then call LoadAd to load a banner into an arrangement, or ShowAt to load one at the top or bottom of the screen. The defaults are Google's test IDs. Ads only work in a built app, never in the Companion.
-
-One AdMobBanner shows one banner at a time: `LoadAd` puts it inside an arrangement, `ShowAt` floats it over the layout, and calling either again replaces the current banner.
-
-App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
+Every event, method, property and dropdown of **AdMobBanner**, in alphabetical order.
 
 **Permissions**
 
@@ -198,39 +186,4 @@ Whether the banner is on screen. Hiding it keeps the loaded ad, so showing it ag
 | `Top` | Floats at the top of the screen. |
 | `Bottom` | Floats at the bottom of the screen. |
 
-## Example
-
-[AdMobBannerDemo.aia](https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-banner/AdMobBannerDemo.aia) is ready to build. Screen1 has a status
-label, a detail label, a HorizontalArrangement called **BannerBox** (width: fill parent)
-where the banner goes, four buttons, and **AdMobBanner1** with the default test IDs.
-
-**Load a banner when the app starts.** `LoadAd` places it inside BannerBox with the
-Adaptive size, which fits the width of the screen.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="472"><figcaption></figcaption></figure></div>
-
-**Show what happened.** `AdLoaded` confirms the ad is on screen. `AdFailedToLoad` shows
-the error code and Google's message, and `AdImpression` shows when the ad was counted.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-admobbanner1-adloaded.png" alt="AdLoaded" width="410"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-admobbanner1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-admobbanner1-adimpression.png" alt="AdImpression" width="468"><figcaption></figcaption></figure></div>
-
-**Load in the box** loads a fresh banner into BannerBox again.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-loadbutton-click.png" alt="LoadButton.Click" width="472"><figcaption></figcaption></figure></div>
-
-**Float at the bottom** loads a standard 320×50 banner that floats at the bottom of
-the screen, over the layout.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-showatbutton-click.png" alt="ShowAtButton.Click" width="485"><figcaption></figcaption></figure></div>
-
-**Hide / show** flips `Visible`. The loaded ad is kept, so it comes back instantly.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-togglebutton-click.png" alt="ToggleButton.Click" width="600"><figcaption></figcaption></figure></div>
-
-**Destroy** removes the banner and frees its memory.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-banner/images/sample-destroybutton-click.png" alt="DestroyButton.Click" width="411"><figcaption></figcaption></figure></div>
+To see these blocks working together, follow the [tutorial](tutorial.md).

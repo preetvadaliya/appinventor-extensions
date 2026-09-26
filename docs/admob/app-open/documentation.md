@@ -1,23 +1,11 @@
 ---
-description: Full-screen ads when the user comes back to your app.
-icon: rectangle-ad
+description: Every block of the AdMob App Open extension.
+icon: book
 ---
 
-# AdMob App Open
+# AdMob App Open documentation
 
-| Extension | Version | Requires | Built on |
-|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/docs/images/admob.png" alt="" data-size="line"> AdMobAppOpen | 1.0 | Android 6.0 (API 23) | Google Mobile Ads SDK 25.3.0 |
-
-<a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-app-open/de.preet.admob.appopen.aix" class="button primary" data-icon="download">Download .aix</a> <a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-app-open/AdMobAppOpenDemo.aia" class="button secondary" data-icon="box-open">Sample project (.aia)</a>
-
-## Overview
-
-Shows an AdMob app open ad when the user comes back to your app. With ShowOnReturn checked it loads, shows and reloads ads by itself; use LoadAd and ShowAd for anything else, like showing one at startup. Put it on Screen1. The defaults are Google's test IDs. Ads only work in a built app, never in the Companion.
-
-The ad shows only when the user comes back to the app from another app or the home screen: not when the app first opens, not when switching between your own screens, and never over another ad.
-
-App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
+Every event, method, property and dropdown of **AdMobAppOpen**, in alphabetical order.
 
 **Permissions**
 
@@ -163,23 +151,4 @@ A list of test device IDs. These devices get test ads even with real IDs. Logcat
 | `MediationShowError` | `Mediation Show Error` | A mediation partner failed to show its ad. |
 | `Unknown` | `Unknown` | Anything else. The message explains it. |
 
-## Example
-
-[AdMobAppOpenDemo.aia](https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-app-open/AdMobAppOpenDemo.aia) is ready to build. With `ShowOnReturn`
-checked, the extension needs no blocks at all; these only show what is happening. Build
-it, press the home button, then open the app again.
-
-**Status of the ad.** The label shows when an ad is ready, what went wrong, when it is on
-screen, and that the next one is loading after it closes.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adloaded.png" alt="AdLoaded" width="594"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adshowed.png" alt="AdShowed" width="400"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-addismissed.png" alt="AdDismissed" width="485"><figcaption></figcaption></figure></div>
-
-**Show now** shows the loaded ad on demand, which is how you would use `ShowAd` yourself.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-showbutton-click.png" alt="ShowButton.Click" width="488"><figcaption></figcaption></figure></div>
+To see these blocks working together, follow the [tutorial](tutorial.md).

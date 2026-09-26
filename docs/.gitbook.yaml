@@ -5,16 +5,16 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  admob/extensions/banner: admob/banner.md
-  admob/tutorials/banner: admob/banner.md
-  admob/extensions/interstitial: admob/interstitial.md
-  admob/tutorials/interstitial: admob/interstitial.md
-  admob/extensions/rewarded: admob/rewarded.md
-  admob/tutorials/rewarded: admob/rewarded.md
-  admob/extensions/app-open: admob/app-open.md
-  admob/tutorials/app-open: admob/app-open.md
-  admob/extensions/rewarded-interstitial: admob/rewarded-interstitial.md
-  admob/tutorials/rewarded-interstitial: admob/rewarded-interstitial.md
+  admob/extensions/banner: admob/banner/documentation.md
+  admob/tutorials/banner: admob/banner/tutorial.md
+  admob/extensions/interstitial: admob/interstitial/documentation.md
+  admob/tutorials/interstitial: admob/interstitial/tutorial.md
+  admob/extensions/rewarded: admob/rewarded/documentation.md
+  admob/tutorials/rewarded: admob/rewarded/tutorial.md
+  admob/extensions/app-open: admob/app-open/documentation.md
+  admob/tutorials/app-open: admob/app-open/tutorial.md
+  admob/extensions/rewarded-interstitial: admob/rewarded-interstitial/documentation.md
+  admob/tutorials/rewarded-interstitial: admob/rewarded-interstitial/tutorial.md
   admob/extensions: admob/README.md
   admob/extensions/errors: admob/README.md
   admob/tutorials: admob/README.md

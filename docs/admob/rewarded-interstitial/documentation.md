@@ -1,23 +1,11 @@
 ---
-description: Rewarded ads at natural breaks, after an intro screen.
-icon: rectangle-ad
+description: Every block of the AdMob Rewarded Interstitial extension.
+icon: book
 ---
 
-# AdMob Rewarded Interstitial
+# AdMob Rewarded Interstitial documentation
 
-| Extension | Version | Requires | Built on |
-|---|---|---|---|
-| <img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/docs/images/admob.png" alt="" data-size="line"> AdMobRewardedInterstitial | 1.0 | Android 6.0 (API 23) | Google Mobile Ads SDK 25.3.0 |
-
-<a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded-interstitial/de.preet.admob.rewardedinterstitial.aix" class="button primary" data-icon="download">Download .aix</a> <a href="https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded-interstitial/AdMobRewardedInterstitialDemo.aia" class="button secondary" data-icon="box-open">Sample project (.aia)</a>
-
-## Overview
-
-Shows a full-screen AdMob rewarded interstitial ad at a natural break, without the user tapping a button first. Google requires an intro screen before it that says what the reward is and lets the user skip. Give the reward in UserEarnedReward. The defaults are Google's test IDs. Ads only work in a built app, never in the Companion.
-
-Google requires an intro screen before each ad that says what the reward is and lets the user skip. Give the reward in `UserEarnedReward` only.
-
-App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
+Every event, method, property and dropdown of **AdMobRewardedInterstitial**, in alphabetical order.
 
 **Permissions**
 
@@ -164,32 +152,4 @@ A list of test device IDs. These devices get test ads even with real IDs. Logcat
 | `MediationShowError` | `Mediation Show Error` | A mediation partner failed to show its ad. |
 | `Unknown` | `Unknown` | Anything else. The message explains it. |
 
-## Example
-
-[AdMobRewardedInterstitialDemo.aia](https://github.com/preetvadaliya/appinventor-extensions/raw/master/admob-rewarded-interstitial/AdMobRewardedInterstitialDemo.aia) is ready to
-build. Screen1 has a status label, a coin counter, a **Finish level** button (the natural
-break), a Notifier for the intro screen, and **AdMobRewardedInterstitial1** with the
-default test IDs.
-
-**Load an ad as soon as the app starts,** so one is ready at the next break.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="369"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adloaded.png" alt="AdLoaded" width="499"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
-
-**The intro screen.** When the level ends and an ad is ready, a dialog says what the
-reward is and offers **No thanks**, as Google requires.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-finishbutton-click.png" alt="FinishButton.Click" width="647"><figcaption></figcaption></figure></div>
-
-**Show the ad only if the user agreed.**
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-notifier1-afterchoosing.png" alt="Notifier1.AfterChoosing" width="422"><figcaption></figcaption></figure></div>
-
-**Give the reward** in `UserEarnedReward`, and load the next ad after this one closes.
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-userearnedreward.png" alt="UserEarnedReward" width="712"><figcaption></figcaption></figure></div>
-
-<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-addismissed.png" alt="AdDismissed" width="379"><figcaption></figcaption></figure></div>
+To see these blocks working together, follow the [tutorial](tutorial.md).
