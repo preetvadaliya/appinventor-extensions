@@ -10,6 +10,7 @@
 | Extension | What it does | Download |
 |---|---|---|
 | [AdMob Banner](admob-banner/) | AdMob banner ads on Google Mobile Ads SDK 24.4.0 | [.aix and sample .aia](admob-banner/) |
+| [AdMob Interstitial](admob-interstitial/) | Full-screen AdMob interstitial ads on Google Mobile Ads SDK 24.4.0 | [.aix and sample .aia](admob-interstitial/) |
 
 ---
 
