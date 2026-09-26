@@ -19,15 +19,11 @@ Show it only when the user asks for it, and give the reward in `UserEarnedReward
 
 App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
 
-<details>
+**Permissions**
 
-<summary>Permissions</summary>
-
-* `android.permission.INTERNET`
-* `android.permission.ACCESS_NETWORK_STATE`
-* `com.google.android.gms.permission.AD_ID`
-
-</details>
+1. `android.permission.INTERNET`
+2. `android.permission.ACCESS_NETWORK_STATE`
+3. `com.google.android.gms.permission.AD_ID`
 
 ## Events
 
@@ -35,13 +31,13 @@ App ID, test ads, going live and error codes are explained on the [AdMob](README
 
 The user closed the ad. Resume your app and call LoadAd for the next one.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-addismissed.png" alt="AdDismissed" width="317"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-addismissed.png" alt="AdDismissed" width="317"><figcaption></figcaption></figure></div>
 
 ### AdFailedToLoad
 
 A rewarded ad could not load. No Fill just means no ad was available, which is normal.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="337"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="337"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -52,7 +48,7 @@ A rewarded ad could not load. No Fill just means no ad was available, which is n
 
 The ad could not be shown, for example AdNotReady when nothing was loaded.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="341"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="341"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -63,19 +59,19 @@ The ad could not be shown, for example AdNotReady when nothing was loaded.
 
 A rewarded ad loaded and is ready to show.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adloaded.png" alt="AdLoaded" width="298"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adloaded.png" alt="AdLoaded" width="298"><figcaption></figcaption></figure></div>
 
 ### AdShowed
 
 The ad now covers the screen. Pause games or sound here.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adshowed.png" alt="AdShowed" width="302"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-adshowed.png" alt="AdShowed" width="302"><figcaption></figcaption></figure></div>
 
 ### UserEarnedReward
 
 The user watched enough of the ad to earn the reward. Give the reward here and only here: someone who closes the ad early still gets AdDismissed. rewardType and rewardAmount come from the ad unit's settings in the AdMob console.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-userearnedreward.png" alt="UserEarnedReward" width="360"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/event-userearnedreward.png" alt="UserEarnedReward" width="360"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -88,7 +84,7 @@ The user watched enough of the ad to earn the reward. Give the reward here and o
 
 True when a rewarded ad is loaded and ready to show.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-isloaded.png" alt="IsLoaded" width="286"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-isloaded.png" alt="IsLoaded" width="286"><figcaption></figcaption></figure></div>
 
 Returns a boolean.
 
@@ -96,13 +92,13 @@ Returns a boolean.
 
 Loads a rewarded ad in the background. AdLoaded or AdFailedToLoad follows. Ignored while a load is already running.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-loadad.png" alt="LoadAd" width="269"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-loadad.png" alt="LoadAd" width="269"><figcaption></figcaption></figure></div>
 
 ### ShowAd
 
 Shows the loaded rewarded ad full screen. Give the reward in UserEarnedReward. One loaded ad shows only once, so call LoadAd again in AdDismissed. With nothing loaded, AdFailedToShow fires with AdNotReady.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-showad.png" alt="ShowAd" width="273"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/method-showad.png" alt="ShowAd" width="273"><figcaption></figcaption></figure></div>
 
 ## Properties
 
@@ -112,9 +108,9 @@ Shows the loaded rewarded ad full screen. Give the reward in UserEarnedReward. O
 
 This rewarded ad's unit ID, the one with a /. The test default always fills and can't affect your account. A change takes effect on the next LoadAd.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-adunitid-set.png" alt="set AdUnitId" width="330"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-adunitid-set.png" alt="set AdUnitId" width="330"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-adunitid-get.png" alt="AdUnitId" width="270"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-adunitid-get.png" alt="AdUnitId" width="270"><figcaption></figcaption></figure></div>
 
 ### AppId
 
@@ -122,9 +118,9 @@ This rewarded ad's unit ID, the one with a /. The test default always fills and 
 
 Your AdMob app ID from the AdMob console, the one with a ~. Use the same value in every AdMob extension in the app. Changing it after the first ad has loaded has no effect.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-appid-set.png" alt="set AppId" width="312"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-appid-set.png" alt="set AppId" width="312"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-appid-get.png" alt="AppId" width="252"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-appid-get.png" alt="AppId" width="252"><figcaption></figcaption></figure></div>
 
 ### ChildDirected
 
@@ -132,9 +128,9 @@ Your AdMob app ID from the AdMob console, the one with a ~. Use the same value i
 
 Check this if the app is for children (Google Play Families policy). It also limits ads to content rated G. Unchecked leaves the setting unspecified. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-childdirected-set.png" alt="set ChildDirected" width="361"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-childdirected-set.png" alt="set ChildDirected" width="361"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-childdirected-get.png" alt="ChildDirected" width="301"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-childdirected-get.png" alt="ChildDirected" width="301"><figcaption></figcaption></figure></div>
 
 ### TestDeviceIds
 
@@ -142,15 +138,15 @@ Check this if the app is for children (Google Play Families policy). It also lim
 
 A list of test device IDs. These devices get test ads even with real IDs. Logcat prints the ID on the first ad request. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="365"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="365"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="305"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="305"><figcaption></figcaption></figure></div>
 
 ## Dropdowns
 
 ### RewardedError
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/helper-rewardederror.png" alt="RewardedError" width="201"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/helper-rewardederror.png" alt="RewardedError" width="201"><figcaption></figcaption></figure></div>
 
 | Option | `errorCode` text | Meaning |
 |---|---|---|
@@ -176,28 +172,28 @@ the default test IDs.
 
 **Load an ad as soon as the app starts,** so one is ready when the user asks for it.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="306"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="306"><figcaption></figcaption></figure></div>
 
 **Show whether it loaded.** `AdLoaded` says the ad is ready, `AdFailedToLoad` shows why
 it isn't.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adloaded.png" alt="AdLoaded" width="546"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adloaded.png" alt="AdLoaded" width="546"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoload.png" alt="AdFailedToLoad" width="424"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
 
 **Watch ad for coins** checks `IsLoaded` first, so tapping it too early just shows a
 message.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-watchbutton-click.png" alt="WatchButton.Click" width="488"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-watchbutton-click.png" alt="WatchButton.Click" width="488"><figcaption></figcaption></figure></div>
 
 **Give the reward.** `UserEarnedReward` adds `rewardAmount` to the coin counter. It fires
 only when the user has watched enough of the ad.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-userearnedreward.png" alt="UserEarnedReward" width="712"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-userearnedreward.png" alt="UserEarnedReward" width="712"><figcaption></figcaption></figure></div>
 
 **After the ad closes,** `AdDismissed` loads the next one right away, because each loaded
 ad shows only once. `AdFailedToShow` shows what went wrong.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-addismissed.png" alt="AdDismissed" width="485"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-addismissed.png" alt="AdDismissed" width="485"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoshow.png" alt="AdFailedToShow" width="424"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded/images/sample-admobrewarded1-adfailedtoshow.png" alt="AdFailedToShow" width="424"><figcaption></figcaption></figure></div>

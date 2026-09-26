@@ -19,15 +19,11 @@ The ad shows only when the user comes back to the app from another app or the ho
 
 App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
 
-<details>
+**Permissions**
 
-<summary>Permissions</summary>
-
-* `android.permission.INTERNET`
-* `android.permission.ACCESS_NETWORK_STATE`
-* `com.google.android.gms.permission.AD_ID`
-
-</details>
+1. `android.permission.INTERNET`
+2. `android.permission.ACCESS_NETWORK_STATE`
+3. `com.google.android.gms.permission.AD_ID`
 
 ## Events
 
@@ -35,13 +31,13 @@ App ID, test ads, going live and error codes are explained on the [AdMob](README
 
 The user closed the ad. With ShowOnReturn checked, the next one is already loading.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-addismissed.png" alt="AdDismissed" width="312"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-addismissed.png" alt="AdDismissed" width="312"><figcaption></figcaption></figure></div>
 
 ### AdFailedToLoad
 
 An app open ad could not load. No Fill just means no ad was available, which is normal.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="332"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="332"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -52,7 +48,7 @@ An app open ad could not load. No Fill just means no ad was available, which is 
 
 The ad could not be shown, for example AdNotReady when nothing was loaded.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="336"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="336"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -63,13 +59,13 @@ The ad could not be shown, for example AdNotReady when nothing was loaded.
 
 An app open ad loaded and is ready to show.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adloaded.png" alt="AdLoaded" width="293"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adloaded.png" alt="AdLoaded" width="293"><figcaption></figcaption></figure></div>
 
 ### AdShowed
 
 The ad now covers the screen.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adshowed.png" alt="AdShowed" width="297"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/event-adshowed.png" alt="AdShowed" width="297"><figcaption></figcaption></figure></div>
 
 ## Methods
 
@@ -77,7 +73,7 @@ The ad now covers the screen.
 
 True when an app open ad is loaded and not expired. Google says an app open ad expires 4 hours after loading.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-isloaded.png" alt="IsLoaded" width="281"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-isloaded.png" alt="IsLoaded" width="281"><figcaption></figcaption></figure></div>
 
 Returns a boolean.
 
@@ -85,13 +81,13 @@ Returns a boolean.
 
 Loads an app open ad in the background. AdLoaded or AdFailedToLoad follows. Ignored while a load is already running.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-loadad.png" alt="LoadAd" width="264"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-loadad.png" alt="LoadAd" width="264"><figcaption></figcaption></figure></div>
 
 ### ShowAd
 
 Shows the loaded app open ad now, for example at startup. With nothing loaded, AdFailedToShow fires with AdNotReady.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-showad.png" alt="ShowAd" width="268"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/method-showad.png" alt="ShowAd" width="268"><figcaption></figcaption></figure></div>
 
 ## Properties
 
@@ -101,9 +97,9 @@ Shows the loaded app open ad now, for example at startup. With nothing loaded, A
 
 This app open ad's unit ID, the one with a /. The test default always fills and can't affect your account. A change takes effect on the next load.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-adunitid-set.png" alt="set AdUnitId" width="325"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-adunitid-set.png" alt="set AdUnitId" width="325"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-adunitid-get.png" alt="AdUnitId" width="265"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-adunitid-get.png" alt="AdUnitId" width="265"><figcaption></figcaption></figure></div>
 
 ### AppId
 
@@ -111,9 +107,9 @@ This app open ad's unit ID, the one with a /. The test default always fills and 
 
 Your AdMob app ID from the AdMob console, the one with a ~. Use the same value in every AdMob extension in the app. Changing it after the first ad has loaded has no effect.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-appid-set.png" alt="set AppId" width="307"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-appid-set.png" alt="set AppId" width="307"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-appid-get.png" alt="AppId" width="247"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-appid-get.png" alt="AppId" width="247"><figcaption></figcaption></figure></div>
 
 ### ChildDirected
 
@@ -121,9 +117,9 @@ Your AdMob app ID from the AdMob console, the one with a ~. Use the same value i
 
 Check this if the app is for children (Google Play Families policy). It also limits ads to content rated G. Unchecked leaves the setting unspecified. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-childdirected-set.png" alt="set ChildDirected" width="356"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-childdirected-set.png" alt="set ChildDirected" width="356"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-childdirected-get.png" alt="ChildDirected" width="296"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-childdirected-get.png" alt="ChildDirected" width="296"><figcaption></figcaption></figure></div>
 
 ### ShowOnReturn
 
@@ -131,9 +127,9 @@ Check this if the app is for children (Google Play Families policy). It also lim
 
 Loads an ad when the screen starts, shows it whenever the user comes back to the app from the background, then loads the next one. Uncheck it to control everything with blocks.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-showonreturn-set.png" alt="set ShowOnReturn" width="369"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-showonreturn-set.png" alt="set ShowOnReturn" width="369"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-showonreturn-get.png" alt="ShowOnReturn" width="309"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-showonreturn-get.png" alt="ShowOnReturn" width="309"><figcaption></figcaption></figure></div>
 
 ### TestDeviceIds
 
@@ -141,15 +137,15 @@ Loads an ad when the screen starts, shows it whenever the user comes back to the
 
 A list of test device IDs. These devices get test ads even with real IDs. Logcat prints the ID on the first ad request. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="360"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="360"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="300"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="300"><figcaption></figcaption></figure></div>
 
 ## Dropdowns
 
 ### AppOpenError
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/helper-appopenerror.png" alt="AppOpenError" width="196"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/helper-appopenerror.png" alt="AppOpenError" width="196"><figcaption></figcaption></figure></div>
 
 | Option | `errorCode` text | Meaning |
 |---|---|---|
@@ -176,14 +172,14 @@ it, press the home button, then open the app again.
 **Status of the ad.** The label shows when an ad is ready, what went wrong, when it is on
 screen, and that the next one is loading after it closes.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adloaded.png" alt="AdLoaded" width="594"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adloaded.png" alt="AdLoaded" width="594"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adfailedtoload.png" alt="AdFailedToLoad" width="424"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adshowed.png" alt="AdShowed" width="400"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-adshowed.png" alt="AdShowed" width="400"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-addismissed.png" alt="AdDismissed" width="485"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-admobappopen1-addismissed.png" alt="AdDismissed" width="485"><figcaption></figcaption></figure></div>
 
 **Show now** shows the loaded ad on demand, which is how you would use `ShowAd` yourself.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-showbutton-click.png" alt="ShowButton.Click" width="488"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-app-open/images/sample-showbutton-click.png" alt="ShowButton.Click" width="488"><figcaption></figcaption></figure></div>

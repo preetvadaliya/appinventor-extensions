@@ -19,15 +19,11 @@ Google requires an intro screen before each ad that says what the reward is and 
 
 App ID, test ads, going live and error codes are explained on the [AdMob](README.md) page.
 
-<details>
+**Permissions**
 
-<summary>Permissions</summary>
-
-* `android.permission.INTERNET`
-* `android.permission.ACCESS_NETWORK_STATE`
-* `com.google.android.gms.permission.AD_ID`
-
-</details>
+1. `android.permission.INTERNET`
+2. `android.permission.ACCESS_NETWORK_STATE`
+3. `com.google.android.gms.permission.AD_ID`
 
 ## Events
 
@@ -35,13 +31,13 @@ App ID, test ads, going live and error codes are explained on the [AdMob](README
 
 The user closed the ad. Resume your app and call LoadAd for the next one.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-addismissed.png" alt="AdDismissed" width="379"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-addismissed.png" alt="AdDismissed" width="379"><figcaption></figcaption></figure></div>
 
 ### AdFailedToLoad
 
 A rewarded interstitial ad could not load. No Fill just means no ad was available, which is normal.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="400"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adfailedtoload.png" alt="AdFailedToLoad" width="400"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -52,7 +48,7 @@ A rewarded interstitial ad could not load. No Fill just means no ad was availabl
 
 The ad could not be shown, for example AdNotReady when nothing was loaded.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="404"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adfailedtoshow.png" alt="AdFailedToShow" width="404"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -63,19 +59,19 @@ The ad could not be shown, for example AdNotReady when nothing was loaded.
 
 A rewarded interstitial ad loaded and is ready to show.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adloaded.png" alt="AdLoaded" width="361"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adloaded.png" alt="AdLoaded" width="361"><figcaption></figcaption></figure></div>
 
 ### AdShowed
 
 The ad now covers the screen. Pause games or sound here.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adshowed.png" alt="AdShowed" width="365"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-adshowed.png" alt="AdShowed" width="365"><figcaption></figcaption></figure></div>
 
 ### UserEarnedReward
 
 The user watched enough of the ad to earn the reward. Give the reward here and only here: someone who closes the ad early still gets AdDismissed. rewardType and rewardAmount come from the ad unit's settings in the AdMob console.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-userearnedreward.png" alt="UserEarnedReward" width="423"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/event-userearnedreward.png" alt="UserEarnedReward" width="423"><figcaption></figcaption></figure></div>
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -88,7 +84,7 @@ The user watched enough of the ad to earn the reward. Give the reward here and o
 
 True when a rewarded interstitial ad is loaded and ready to show.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-isloaded.png" alt="IsLoaded" width="349"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-isloaded.png" alt="IsLoaded" width="349"><figcaption></figcaption></figure></div>
 
 Returns a boolean.
 
@@ -96,13 +92,13 @@ Returns a boolean.
 
 Loads a rewarded interstitial ad in the background. AdLoaded or AdFailedToLoad follows. Ignored while a load is already running.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-loadad.png" alt="LoadAd" width="331"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-loadad.png" alt="LoadAd" width="331"><figcaption></figcaption></figure></div>
 
 ### ShowAd
 
 Shows the loaded rewarded interstitial ad full screen. Show your intro screen first: Google requires one that says what the reward is and lets the user skip. Give the reward in UserEarnedReward. One loaded ad shows only once, so call LoadAd again in AdDismissed. With nothing loaded, AdFailedToShow fires with AdNotReady.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-showad.png" alt="ShowAd" width="335"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/method-showad.png" alt="ShowAd" width="335"><figcaption></figcaption></figure></div>
 
 ## Properties
 
@@ -112,9 +108,9 @@ Shows the loaded rewarded interstitial ad full screen. Show your intro screen fi
 
 This rewarded interstitial ad's unit ID, the one with a /. The test default always fills and can't affect your account. A change takes effect on the next LoadAd.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-adunitid-set.png" alt="set AdUnitId" width="392"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-adunitid-set.png" alt="set AdUnitId" width="392"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-adunitid-get.png" alt="AdUnitId" width="332"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-adunitid-get.png" alt="AdUnitId" width="332"><figcaption></figcaption></figure></div>
 
 ### AppId
 
@@ -122,9 +118,9 @@ This rewarded interstitial ad's unit ID, the one with a /. The test default alwa
 
 Your AdMob app ID from the AdMob console, the one with a ~. Use the same value in every AdMob extension in the app. Changing it after the first ad has loaded has no effect.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-appid-set.png" alt="set AppId" width="374"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-appid-set.png" alt="set AppId" width="374"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-appid-get.png" alt="AppId" width="314"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-appid-get.png" alt="AppId" width="314"><figcaption></figcaption></figure></div>
 
 ### ChildDirected
 
@@ -132,9 +128,9 @@ Your AdMob app ID from the AdMob console, the one with a ~. Use the same value i
 
 Check this if the app is for children (Google Play Families policy). It also limits ads to content rated G. Unchecked leaves the setting unspecified. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-childdirected-set.png" alt="set ChildDirected" width="424"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-childdirected-set.png" alt="set ChildDirected" width="424"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-childdirected-get.png" alt="ChildDirected" width="364"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-childdirected-get.png" alt="ChildDirected" width="364"><figcaption></figcaption></figure></div>
 
 ### TestDeviceIds
 
@@ -142,15 +138,15 @@ Check this if the app is for children (Google Play Families policy). It also lim
 
 A list of test device IDs. These devices get test ads even with real IDs. Logcat prints the ID on the first ad request. Applies to every AdMob ad in the app.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="427"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-testdeviceids-set.png" alt="set TestDeviceIds" width="427"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="367"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/prop-testdeviceids-get.png" alt="TestDeviceIds" width="367"><figcaption></figcaption></figure></div>
 
 ## Dropdowns
 
 ### RewardedInterstitialError
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/helper-rewardedinterstitialerror.png" alt="RewardedInterstitialError" width="264"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/helper-rewardedinterstitialerror.png" alt="RewardedInterstitialError" width="264"><figcaption></figcaption></figure></div>
 
 | Option | `errorCode` text | Meaning |
 |---|---|---|
@@ -177,23 +173,23 @@ default test IDs.
 
 **Load an ad as soon as the app starts,** so one is ready at the next break.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="369"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-screen1-initialize.png" alt="Screen1.Initialize" width="369"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adloaded.png" alt="AdLoaded" width="499"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adloaded.png" alt="AdLoaded" width="499"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adfailedtoload.png" alt="AdFailedToLoad" width="424"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-adfailedtoload.png" alt="AdFailedToLoad" width="424"><figcaption></figcaption></figure></div>
 
 **The intro screen.** When the level ends and an ad is ready, a dialog says what the
 reward is and offers **No thanks**, as Google requires.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-finishbutton-click.png" alt="FinishButton.Click" width="647"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-finishbutton-click.png" alt="FinishButton.Click" width="647"><figcaption></figcaption></figure></div>
 
 **Show the ad only if the user agreed.**
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-notifier1-afterchoosing.png" alt="Notifier1.AfterChoosing" width="422"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-notifier1-afterchoosing.png" alt="Notifier1.AfterChoosing" width="422"><figcaption></figcaption></figure></div>
 
 **Give the reward** in `UserEarnedReward`, and load the next ad after this one closes.
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-userearnedreward.png" alt="UserEarnedReward" width="712"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-userearnedreward.png" alt="UserEarnedReward" width="712"><figcaption></figcaption></figure></div>
 
-<figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-addismissed.png" alt="AdDismissed" width="379"></figure>
+<div align="left"><figure><img src="https://raw.githubusercontent.com/preetvadaliya/appinventor-extensions/master/admob-rewarded-interstitial/images/sample-admobrewardedinterstitial1-addismissed.png" alt="AdDismissed" width="379"><figcaption></figcaption></figure></div>
