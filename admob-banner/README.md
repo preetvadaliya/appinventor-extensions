@@ -1,7 +1,7 @@
 # AdMob Banner
 
-A free extension that shows **AdMob banner ads** in MIT App Inventor apps, built on the
-latest supported **Google Mobile Ads SDK 24.4.0** (Google supports it until June 30, 2028).
+A free extension that shows **AdMob banner ads** in MIT App Inventor apps, built on
+**Google Mobile Ads SDK 25.3.0**, which Google supports until June 30, 2028.
 
 - **AppId is a normal Designer property.** No manifest editing and no extra
   "manifest extension": paste your App ID and build.
@@ -9,17 +9,17 @@ latest supported **Google Mobile Ads SDK 24.4.0** (Google supports it until June
   on the first build.
 - **Two blocks to show an ad:** `LoadAd` puts a banner inside an arrangement,
   `ShowAt` floats one at the top or bottom of the screen.
-- **Standalone:** interstitial and rewarded ads are planned as separate extensions
-  that work alone or together with this one.
+- **Standalone:** an AdMob Interstitial extension is also available and a Rewarded one
+  is planned. Each works alone or together with the others.
 
 | | |
 |---|---|
 | **Extension** | AdMobBanner |
 | **Package** | `de.preet.admob.banner` |
-| **Version** | 1.0 |
-| **Google Mobile Ads SDK** | 24.4.0 |
+| **Version** | 1.1 |
+| **Google Mobile Ads SDK** | 25.3.0 |
 | **Minimum Android** | 6.0 (API 23) |
-| **Size** | 10.4 MB |
+| **Size** | 11.9 MB |
 
 ## Download
 

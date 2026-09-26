@@ -1,8 +1,7 @@
 # AdMob Interstitial
 
 A free extension that shows **full-screen AdMob interstitial ads** in MIT App Inventor
-apps, built on the latest supported **Google Mobile Ads SDK 24.4.0** (Google supports it
-until June 30, 2028).
+apps, built on **Google Mobile Ads SDK 25.3.0**, which Google supports until June 30, 2028.
 
 - **AppId is a normal Designer property.** No manifest editing and no extra
   "manifest extension": paste your App ID and build.
@@ -16,10 +15,10 @@ until June 30, 2028).
 |---|---|
 | **Extension** | AdMobInterstitial |
 | **Package** | `de.preet.admob.interstitial` |
-| **Version** | 1.0 |
-| **Google Mobile Ads SDK** | 24.4.0 |
+| **Version** | 1.1 |
+| **Google Mobile Ads SDK** | 25.3.0 |
 | **Minimum Android** | 6.0 (API 23) |
-| **Size** | 10.4 MB |
+| **Size** | 11.8 MB |
 
 ## Download
 
