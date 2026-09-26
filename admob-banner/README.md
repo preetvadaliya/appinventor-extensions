@@ -9,8 +9,9 @@ A free extension that shows **AdMob banner ads** in MIT App Inventor apps, built
   on the first build.
 - **Two blocks to show an ad:** `LoadAd` puts a banner inside an arrangement,
   `ShowAt` floats one at the top or bottom of the screen.
-- **Standalone:** an AdMob Interstitial extension is also available and a Rewarded one
-  is planned. Each works alone or together with the others.
+- **Standalone:** [AdMob Interstitial](https://github.com/preetvadaliya/appinventor-extensions/tree/master/admob-interstitial) and
+  [AdMob Rewarded](https://github.com/preetvadaliya/appinventor-extensions/tree/master/admob-rewarded) are also available. Each works alone or together
+  with the others.
 
 | | |
 |---|---|
