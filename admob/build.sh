@@ -19,8 +19,12 @@ mkdir -p "$(dirname "$LINK")"
 ln -sfn "$HERE/src/de/preet/admob" "$LINK"
 trap 'rm -f "$LINK"; rmdir "$AI/components/src/de/preet" "$AI/components/src/de" 2>/dev/null || true' EXIT
 
+# On JDK 9+ App Inventor targets the running JDK's class version, but MIT's build
+# server runs Java 11 and fails to load anything newer, so pin the Java 8 target.
+ANT="ant -Dlang.version=8"
+
 cd "$AI/components"
-ant CommonConstants
+$ANT CommonConstants
 mkdir -p "$DEPS"
 cp "$HERE"/lib/*.aar "$HERE"/lib/*.jar "$DEPS"/
 
@@ -32,7 +36,7 @@ javac -nowarn -d "$ENUMS" -cp "$AI/build/components/CommonConstants.jar" \
 jar cf "$DEPS/admob-optionlists.jar" -C "$ENUMS" .
 rm -rf "$ENUMS"
 
-ant extensions
+$ANT extensions
 mkdir -p "$HERE/out"
 cp "$AI"/components/build/extensions/de.preet.admob.*.aix "$HERE/out/"
 echo
