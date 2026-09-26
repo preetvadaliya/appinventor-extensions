@@ -11,8 +11,8 @@ until June 30, 2028.
   on the first build.
 - **Simple:** `LoadAd`, then `ShowAd` when the user asks for the reward, and give the
   reward in `UserEarnedReward`.
-- **Works with [AdMob Banner](https://community.appinventor.mit.edu/t/free-admob-banner-extension/176230) and
-  [AdMob Interstitial](https://github.com/preetvadaliya/appinventor-extensions/tree/master/admob-interstitial):** use any of them in the same app.
+- **Part of a set:** [Banner, Interstitial, Rewarded, App Open and Rewarded Interstitial](https://github.com/preetvadaliya/appinventor-extensions)
+  are all free, and each works alone or together with the others.
 
 | | |
 |---|---|
@@ -112,10 +112,10 @@ ad shows only once. `AdFailedToShow` shows what went wrong.
 
 ## Using it with the other AdMob extensions
 
-AdMob Banner, Interstitial and Rewarded can all be in the same app. They share one copy
-of Google's ads SDK, so the app doesn't grow with each one. Set the same **AppId** on
-each, and set **TestDeviceIds** and **ChildDirected** on any one of them: they apply to
-every AdMob ad in the app.
+All five AdMob extensions can be in the same app. They share one copy of Google's ads
+SDK, so the app doesn't grow with each one. Set the same **AppId** on each, and set
+**TestDeviceIds** and **ChildDirected** on any one of them: they apply to every AdMob ad
+in the app.
 
 ## Going live with real ads
 

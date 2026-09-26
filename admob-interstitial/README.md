@@ -9,8 +9,8 @@ apps, built on **Google Mobile Ads SDK 25.3.0**, which Google supports until Jun
   on the first build.
 - **Three blocks:** `LoadAd` loads an ad in the background, `ShowAd` shows it at a
   break in your app, and `IsLoaded` tells you when it is ready.
-- **Works with [AdMob Banner](https://community.appinventor.mit.edu/t/free-admob-banner-extension/176230) and
-  [AdMob Rewarded](https://github.com/preetvadaliya/appinventor-extensions/tree/master/admob-rewarded):** use any of them in the same app.
+- **Part of a set:** [Banner, Interstitial, Rewarded, App Open and Rewarded Interstitial](https://github.com/preetvadaliya/appinventor-extensions)
+  are all free, and each works alone or together with the others.
 
 | | |
 |---|---|
@@ -109,10 +109,10 @@ it isn't.
 
 ## Using it with the other AdMob extensions
 
-AdMob Banner, Interstitial and Rewarded can all be in the same app. They share one copy
-of Google's ads SDK, so the app doesn't grow with each one. Set the same **AppId** on
-each, and set **TestDeviceIds** and **ChildDirected** on any one of them: they apply to
-every AdMob ad in the app.
+All five AdMob extensions can be in the same app. They share one copy of Google's ads
+SDK, so the app doesn't grow with each one. Set the same **AppId** on each, and set
+**TestDeviceIds** and **ChildDirected** on any one of them: they apply to every AdMob ad
+in the app.
 
 ## Going live with real ads
 
