@@ -3,3 +3,32 @@ root: ./
 structure:
   readme: README.md
   summary: SUMMARY.md
+
+redirects:
+  admob/extensions/banner: admob/banner.md
+  admob/tutorials/banner: admob/banner.md
+  admob/extensions/interstitial: admob/interstitial.md
+  admob/tutorials/interstitial: admob/interstitial.md
+  admob/extensions/rewarded: admob/rewarded.md
+  admob/tutorials/rewarded: admob/rewarded.md
+  admob/extensions/app-open: admob/app-open.md
+  admob/tutorials/app-open: admob/app-open.md
+  admob/extensions/rewarded-interstitial: admob/rewarded-interstitial.md
+  admob/tutorials/rewarded-interstitial: admob/rewarded-interstitial.md
+  admob/extensions: admob/README.md
+  admob/extensions/errors: admob/README.md
+  admob/tutorials: admob/README.md
+  admob/tutorials/several-formats: admob/README.md
+  admob/formats: admob/README.md
+  admob/setup: admob/README.md
+  admob/quick-start: admob/README.md
+  admob/going-live: admob/README.md
+  admob/going-live/real-ads: admob/README.md
+  admob/going-live/google-play: admob/README.md
+  admob/going-live/policies: admob/README.md
+  admob/going-live/consent: admob/README.md
+  getting-started/testing: admob/README.md
+  getting-started/install: README.md
+  help/troubleshooting: README.md
+  help/changelog: README.md
+  help/support: README.md
