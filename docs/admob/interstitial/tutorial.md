@@ -70,3 +70,27 @@ tapped, and never while someone is in the middle of something. See
 {% endhint %}
 
 Every block is described in the [AdMob Interstitial documentation](documentation.md).
+
+***
+
+{% columns %}
+{% column %}
+**Preet's App Inventor Extensions**
+
+Free, MIT-licensed extensions for MIT App Inventor by
+[Preet Vadaliya](https://github.com/preetvadaliya).
+
+© 2026 Preet Vadaliya · [MIT License](https://github.com/preetvadaliya/appinventor-extensions/blob/master/LICENSE)
+{% endcolumn %}
+
+{% column %}
+**Links**
+
+* <i class="fa-github">:github:</i> [GitHub](https://github.com/preetvadaliya)
+* <i class="fa-download">:download:</i> [Downloads](https://github.com/preetvadaliya/appinventor-extensions)
+* <i class="fa-bug">:bug:</i> [Report a bug](https://github.com/preetvadaliya/appinventor-extensions/issues)
+* <i class="fa-comments">:comments:</i> [MIT App Inventor Community](https://community.appinventor.mit.edu/t/free-admob-banner-extension/176230)
+{% endcolumn %}
+{% endcolumns %}
+
+AdMob is a trademark of Google LLC. These extensions are not affiliated with or endorsed by Google.
